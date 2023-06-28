@@ -1,0 +1,42 @@
+main{
+    padding-top: 1px;
+}
+.redes-placas{
+    margin: 30px;
+}
+.titulo-rede{
+    padding: 5px;
+    display: flex;
+    font-family: 'Righteous';
+    font-size: 30px;
+    width: fit-content;
+    min-width: 42vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.titulo-rede img{
+    width: 50px;
+}
+.rede-link{
+    background-color: #6f608c;
+    width: fit-content;
+    min-width: 280px;
+    margin-inline: auto;
+    font-size: 25px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+@media (max-width: 870px){
+    .titulo-rede{
+        min-width: 50vw;
+    }
+}
+@media (max-width: 600px) {
+    .titulo-rede{
+        min-width: 250px;
+    }
+    .rede-link{
+        width: fit-content;
+        min-width: 190px;
+    }
+}

@@ -13,24 +13,18 @@ if (horaAtual >= 4 && horaAtual < 12) {
 }
 
 //COR aleatoria no boa-fi//
-function corAleatoria() {
-  const vermelho = Math.floor(Math.random() * 256);
-  const verde = Math.floor(Math.random() * 256);
-  const azul = Math.floor(Math.random() * 256);
-  return `rgb(${vermelho}, ${verde}, ${azul})`;
+var divColorida = document.getElementById("boa-fi");
+var hora = new Date().getHours();
+
+if (hora >= 4 && hora < 12) {
+  divColorida.style.color = "#ffdf38";/*manhã*/
+} else if (hora >= 12 && hora < 19) {
+  divColorida.style.color = "#b16400";/*Tarde*/
+} else if (hora >= 19 && hora < 23 || hora == 23 && minuto == 59 && segundo < 59) {
+  divColorida.style.color = "#3a48b5";/*Noite*/
+} else {
+  divColorida.style.color = "#a05ce7";/*madrugada*/
 }
-  
-const textoAleatorio = document.getElementById('boa-fi');
-const texto = textoAleatorio.textContent;
-  
-let textoFormatado = '';
-  
-for (let i = 0; i < texto.length; i++) {
-  const letra = texto[i];
-  const cor = corAleatoria();
-  textoFormatado += `<span style="color: ${cor};">${letra}</span>`;
-}
-textoAleatorio.innerHTML = textoFormatado;
 
 //Hora atual//
 function atualizarRelogio() {
@@ -39,7 +33,7 @@ function atualizarRelogio() {
   const hora = formatarNumero(dataHoraAtual.getHours());
   const minuto = formatarNumero(dataHoraAtual.getMinutes());
   const segundo = formatarNumero(dataHoraAtual.getSeconds());
-  const horario = `${hora}:${minuto}:${segundo}`;
+  const horario = `${hora}:${minuto}`;
   elementoRelogio.textContent = horario;
 }
 
@@ -47,4 +41,4 @@ function formatarNumero(numero) {
   return numero < 10 ? `0${numero}` : numero;
 }
 
-setInterval(atualizarRelogio, 1000);
+setInterval(atualizarRelogio, 500);
