@@ -1,18 +1,21 @@
 main{
     padding-top: 1px;
 }
-.redes-placas{
+.redes-placas{ /* titulos e links "placa inteira"*/
     margin: 30px;
 }
-.titulo-rede{
+.titulo-rede{ /*bg imagem e texto*/
     padding: 5px;
     display: flex;
-    font-family: 'Righteous';
     font-size: 30px;
     width: fit-content;
     min-width: 42vw;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: #00000073;
+}
+p{
+    font-family: 'Righteous';
+    padding: 10px;
 }
 .titulo-rede img{
     width: 50px;
@@ -23,8 +26,33 @@ main{
     min-width: 280px;
     margin-inline: auto;
     font-size: 25px;
+    font-weight: bold;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+#gith:hover{
+    background-image: linear-gradient(to left, #2d2d2d, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#inst:hover{
+    background-image: linear-gradient(to right, #4c68d7, #8a3ab9, #bc2a8d, #cd486b, #e95950, #fbad50, #fccc63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+#disc:hover{
+    color: #1b1b53;
+}
+#what:hover{
+    color: #5fd45f;
+}
+#pint:hover{
+    color: #a01313;
+}
+#face:hover{
+    color: rgb(12, 58, 184);
 }
 @media (max-width: 870px){
     .titulo-rede{
