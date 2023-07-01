@@ -1,0 +1,13 @@
+/*ESTILO DA "INFO" CSS*/
+
+.placa-imagens{
+    padding: 20px;
+}
+.placa-imagens img{
+    width: 200px;
+}
+@media (max-width: 600px){
+    .placa-imagens img{
+        width: 130px;
+    }
+}

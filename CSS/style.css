@@ -1,9 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Kalam:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Kalam:wght@400;700&family=Righteous&display=swap');
+/*ESTILO GERAL CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;800&family=Arimo:wght@400;700&family=Kalam:wght@400;700&family=Righteous&display=swap');
+.kalam-font{
+    font-family: 'Kalam';
+}
+.archivo-font{
+    font-family: 'Archivo';
+}
+.righteous-font{
+    font-family: 'Righteous';
+}
+.arimo-font{
+    font-family: 'arimo';
+}
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Arimo';
 }
 body{
     background-image: linear-gradient(1deg, #272727, #312453 80%, #8497db 160%);
@@ -34,13 +45,20 @@ a{
     border: 3px solid #928acf;
     font-size: 50px;
     margin: auto 0;
+    font-family: 'Righteous';
+    padding: 10px;
 }
 .hr1{
     width: 60vw;
     margin: 10px auto;
     border: 1px solid #928acf;
 }
-
+.hr2{
+    width: 40vw;
+    margin: 10px auto;
+    border: 2px solid #928acf;
+    border-radius: 10px;
+}
 nav{
     background-color: #41395d;
 }
@@ -52,9 +70,11 @@ ul{
     gap: 30px;
 }
 .nav-li{
+    font-family: 'Righteous';
     text-align: center;
     min-width: 70px;
     padding: 3px;
+    color: #3d3a56;
     background-color: #928acf;
     border: 3px solid #928acf;
     border-radius: 1px;
@@ -83,6 +103,7 @@ main{
     border-radius: 3px;
 }
 .boa-fi{
+    font-family: 'Righteous';
     font-size: 30px;
     background-color: #ffffffab;
     width: fit-content;
@@ -103,13 +124,31 @@ main{
     padding: 10px;
     text-align: left;
 }
+.placa h2{
+    font-family: 'Righteous';
+    color: #87a1ff;
+}
 .gatin{
     width: 200px;
     border: 2px solid #5656d4;
 }
 .texto1{
     margin: 80px 100px;
-
+}
+.texto2{
+    color: #87a1ff;
+    font-family: 'arimo';
+    margin: 80px 100px;
+}
+.texto3{
+    color: #87a1ff;
+    font-family: 'arimo';
+}
+.texto4{
+    color: #87a1ff;
+    font-size: 20px;
+    font-family: 'kalam';
+    font-weight: bolder;
 }
 .brgay{
     display: none;
@@ -122,9 +161,10 @@ main{
     margin: 0 auto;
 }
 footer{
+    font-family: 'arimo';
     justify-content: space-between;
     background-color: #0000009a;
-    height: 200px;
+    min-height: 140px;
     padding: 30px;
     display: flex;
 }
@@ -132,25 +172,15 @@ footer{
     margin: 10px 30px;
 }
 .links a{
-    color: #5656d4;
+    color: #5679ea;
     text-decoration: underline;
-}
-.botao-enviar{
-    text-align: center;
-    width: fit-content;
-    padding: 3px;
-    color: black;
-    background-color: #928acf;
-    border: 3px solid #928acf;
-    border-radius: 1px;
-    margin:0 0 0 auto;
-}
-.botao-enviar:hover{
-    background-color: #00000000;
-    color: #928acf;
 }
 small{
     font-size: 12px;
+}
+.copyright{
+    position: absolute;
+    bottom: 0;
 }
 
 @media (max-width: 600px) {
@@ -170,11 +200,15 @@ small{
     .texto1{
         margin: 50px 10px;
     }
+    .texto2{
+        margin: 50px 10px;
+    }
     .brgay{
         display: grid;
     }
     footer{
         display: grid;
         justify-content: center;
+        min-height: 280px;
     }
 }
