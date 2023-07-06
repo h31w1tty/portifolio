@@ -6,6 +6,10 @@
 .placa-imagens img{
     width: 200px;
 }
+.creditos{
+    margin: 20px;
+    text-align: left;
+}
 @media (max-width: 600px){
     .placa-imagens img{
         width: 130px;
