@@ -41,4 +41,4 @@ function formatarNumero(numero) {
   return numero < 10 ? `0${numero}` : numero;
 }
 
-setInterval(atualizarRelogio, 100);
+setInterval(atualizarRelogio, 500);
